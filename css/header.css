@@ -1,0 +1,12 @@
+.tc-content__main-header {
+  height: 2em;
+  width: calc(100% - calc(var(--left-sidebar-space) + var(--right-sidebar-space)));
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: var(--left-sidebar-space); 
+  margin-right: var(--right-sidebar-space);
+  margin-bottom: 3em;
+  background-color: #000;
+  z-index: 10;
+}

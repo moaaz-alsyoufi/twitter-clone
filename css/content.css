@@ -1,0 +1,12 @@
+.tc-content {
+  min-height: 100vh;
+  margin-left: var(--left-sidebar-space); 
+  margin-right: var(--right-sidebar-space);
+  overflow-y: auto;
+  height: 100vh;
+  margin-top: var(--main-header-height);
+}
+
+.tc-content__inner {
+  padding: 100px 0;
+}
