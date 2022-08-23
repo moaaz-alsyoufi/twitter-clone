@@ -109,6 +109,9 @@
 }
 
 .tc-left-sidebar-user-area__profile-account :first-child {
-  margin-bottom: -var(--md-space);
   font-weight: 600;
+}
+
+.tc-left-sidebar-user-area__profile-account :last-child {
+  margin-top: var(--sm-space);
 }

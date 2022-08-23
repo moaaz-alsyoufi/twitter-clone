@@ -1,6 +1,5 @@
 .tc-wrap .tc-right-sidebar {
   width: var(--right-sidebar-space);
-  right: 0;
   overflow: auto;
 }
 
@@ -55,7 +54,7 @@
   outline: none;
 }
 
-.tc-right-sidebar-trends {
+.tc-right-sidebar-block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,57 +64,91 @@
   margin: var(--md-space) 0 0 0;
 }
 
-.tc-right-sidebar-trends__title {
+.tc-right-sidebar-block__title {
   font-weight: bold;
   font-size: 1rem;
   margin: var(--md-space) 0 0 var(--md-space);
 }
 
-.tc-right-sidebar-trends__list {
+.tc-right-sidebar-block__list {
   width: 100%;
 }
 
-.tc-right-sidebar-trends__list-item {
+.tc-right-sidebar-block__list-item {
   font-size: 0.8rem;
   margin: var(--md-space) 0;
-  padding: var(--xs-space) var(--md-space);
+  padding: var(--md-space);
   max-width: 100%;
   overflow: hidden;
 }
 
-.tc-right-sidebar-trends__list-item:hover {
+.tc-right-sidebar-block__list-item:hover {
   background-color: var(--extra-light);
   cursor: pointer;
 }
 
-.tc-right-sidebar-trends__list-item__more {
+.tc-right-sidebar-block__list-item__more {
   margin-bottom: 0;
   border-bottom-left-radius: var(--md-space);
   border-bottom-right-radius: var(--md-space);
 }
 
-.tc-right-sidebar-trends__list-item__more a {
+.tc-right-sidebar-block__list-item__more a {
   color: var(--primary-color);
   display: block;
   padding: var(--md-space) var(--md-space);
 }
 
-.tc-right-sidebar-trends__list-trend {
+.tc-right-sidebar-block__list-trend,
+.tc-right-sidebar-block__list-profiles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-.tc-right-sidebar-trends__list-trend img {
+.tc-right-sidebar-block__list-trend img {
   margin-top: -(var(--xs-space));
 }
 
-.tc-right-sidebar-trends__list-trend-type {
+.tc-right-sidebar-block__list-trend-type {
   margin: 0 0;
 }
 
-.tc-right-sidebar-trends__list-trend-title {
+.tc-right-sidebar-block__list-trend-title {
   font-weight: bold;
   font-size: 0.9rem;
   margin: var(--xs-space) 0;
+}
+
+.tc-right-sidebar-block__list__profile {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.tc-right-sidebar-block__list__profile-img {
+  background-color: var(--extra-light);
+  border-radius: 999px;
+  width: 50px;
+  height: 50px;
+}
+
+.tc-right-sidebar-block__list__profile-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--md-space);
+}
+
+.tc-right-sidebar-block__list__profile-name p {
+  line-height: 0;
+  font-size: 0.8rem;
+}
+
+.tc-right-sidebar-block__list__profile-name :first-child {
+  font-weight: bold;
+}
+
+.tc-right-sidebar-block__list__profile-name :last-child {
+  margin-top: var(--sm-space);
 }

@@ -1,9 +1,8 @@
 .tc-content {
   min-height: 100vh;
-  margin-left: var(--left-sidebar-space); 
-  margin-right: var(--right-sidebar-space);
   overflow-y: auto;
   height: 100vh;
+  width: calc(100% - (var(--left-sidebar-space) + var(--right-sidebar-space)));
   margin-top: var(--main-header-height);
 }
 
