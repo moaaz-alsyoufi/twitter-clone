@@ -1,5 +1,6 @@
 .tc-wrap .tc-left-sidebar {
   width: var(--left-sidebar-space);
+  height: 100vh;
   border-right: 1px solid var(--border-color);
 }
 
@@ -9,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: var(--md-space) var(--xl-space);
 }
 
@@ -16,22 +18,22 @@
   display: block;
   width: fit-content;
   height: fit-content;
-}
-
-.tc-left-sidebar-main-nav__logo-container img {
-  width: var(--lg-space);
-  height: var(--lg-space);
-  object-fit: cover;
-  padding: var(--sm-space);
   border-radius: 50%;
   transition: background 0.2s linear;
 }
 
-.tc-left-sidebar-main-nav__logo-container:hover img {
+.tc-left-sidebar-main-nav__logo-container img {
+  width: calc(var(--lg-space) + 6px);
+  height: calc(var(--lg-space) + 6px);
+  object-fit: cover;
+  padding: var(--sm-space);
+}
+
+.tc-left-sidebar-main-nav__logo-container:hover {
   background-color: var(--primary-hover-logo);
 }
 
-.tc-left-sidebar-main-nav__list > li:not(:last-child) {
+.tc-left-sidebar-main-nav__list>li:not(:last-child) {
   margin-bottom: var(--xs-space);
 }
 
@@ -47,15 +49,16 @@
 }
 
 .tc-left-sidebar-main-nav__nav-link__icon img {
-  width: calc(var(--lg-space) + 2px);
-  height: calc(var(--lg-space) + 2px);
+  width: calc(var(--lg-space) + 4px);
+  height: calc(var(--lg-space) + 4px);
 }
 
-.tc-left-sidebar-main-nav__nav-link__text {
+span.tc-left-sidebar-main-nav__nav-link__text {
   margin-left: var(--md-space);
   text-transform: capitalize;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: none;
 }
 
 .nav-link__active :last-child {
@@ -66,6 +69,10 @@
   background: var(--border-color);
   border-radius: 40px;
   transition: background 0.2s ease-in;
+}
+
+.tc-left-sidebar-main-nav__tweet-btn {
+  display: none;
 }
 
 .tc-left-sidebar-user-area {
@@ -97,7 +104,7 @@
 }
 
 .tc-left-sidebar-user-area__profile-account {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: start;
   margin-left: var(--md-space);
@@ -105,10 +112,17 @@
 
 .tc-left-sidebar-user-area__profile-account p {
   line-height: 0;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .tc-left-sidebar-user-area__profile-account :first-child {
-  margin-bottom: -var(--md-space);
   font-weight: 600;
+}
+
+.tc-left-sidebar-user-area__profile-account :last-child {
+  margin-top: var(--sm-space);
+}
+
+.tc-left-sidebar-user-area__more {
+  display: none;
 }

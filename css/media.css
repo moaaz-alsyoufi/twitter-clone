@@ -1,0 +1,29 @@
+@media only screen and (min-width: 1282px) {
+    :root {
+        --left-sidebar-space: 275px;
+    }
+
+    .tc-wrap {
+        max-width: 1282px;
+    }
+
+    span.tc-left-sidebar-main-nav__nav-link__text,
+    button.tc-left-sidebar-main-nav__tweet-btn {
+        display: flex;
+    }
+
+    .tc-left-sidebar-user-area__profile-account,
+    .tc-left-sidebar-user-area__more {
+        display: flex;
+    }
+
+    .tc-left-sidebar-user-area__more {
+        margin-left: var(--xl-space);
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    :root {
+        --right-sidebar-space: 290px;
+    }
+}
