@@ -2,8 +2,11 @@
   min-height: 100vh;
   overflow-y: auto;
   height: 100vh;
-  width: calc(100% - (var(--left-sidebar-space) + var(--right-sidebar-space)));
   margin-top: var(--main-header-height);
+}
+
+.tc-content-wrap {
+  flex: 1;
 }
 
 .tc-content__inner {
