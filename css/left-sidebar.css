@@ -72,7 +72,18 @@ span.tc-left-sidebar-main-nav__nav-link__text {
 }
 
 .tc-left-sidebar-main-nav__tweet-btn {
+  height: 46px;
+  width: 46px;
+}
+
+.tc-left-sidebar-main-nav__nav-item__bookmark,
+.tc-left-sidebar-main-nav__nav-item__list,
+.tc-left-sidebar-main-nav__tweet-btn__word {
   display: none;
+}
+
+.tc-left-sidebar-main-nav__tweet-btn__icon {
+  display: block;
 }
 
 .tc-left-sidebar-user-area {

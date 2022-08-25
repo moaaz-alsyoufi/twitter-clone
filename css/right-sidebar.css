@@ -6,6 +6,7 @@
 .tc-right-sidebar-inner {
   height: 100%;
   max-height: 100%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
