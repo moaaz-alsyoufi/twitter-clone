@@ -1,10 +1,20 @@
 @media only screen and (min-width: 1282px) {
     :root {
         --left-sidebar-space: 275px;
+        --right-sidebar-space: 350px;
     }
 
     .tc-wrap {
         max-width: 1282px;
+    }
+
+    .tc-wrap .tc-right-sidebar {
+        padding: var(--md-space) var(--xl-space);
+    }
+
+    .tc-right-sidebar-block__title {
+        font-size: 1.2rem;
+        font-weight: 900;
     }
 
     .tc-left-sidebar-main-nav__nav-item__bookmark,
@@ -32,14 +42,15 @@
 }
 
 @media only screen and (max-width: 1112px) {
-    .tc-right-sidebar-inner {
-        width: 288px;
+    :root {
+        --right-sidebar-space: 332px;
     }
 }
 
 @media only screen and (max-width: 1094px) {
-    :root {
-        --right-sidebar-space: 290px;
+
+    .tc-wrap {
+        max-width: 1094px;
     }
 }
 
