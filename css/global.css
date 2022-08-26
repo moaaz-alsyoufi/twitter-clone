@@ -1,6 +1,6 @@
 :root {
   --left-sidebar-space: 72px;
-  --right-sidebar-space: 400px;
+  --right-sidebar-space: 350px;
   --content-space: 598px;
   --main-header-height: 2em;
   --border-color: #f1f1f1;
@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  max-width: 1024px;
+  max-width: 1094px;
   width: 100%;
   margin: 0 auto;
 }
@@ -51,9 +51,9 @@ body {
   max-height: 100vh;
 }
 
-.tc-content-wrap {
+/* .tc-content-wrap {
   width: var(--content-space);
-}
+} */
 
 /* Start Scroll bar */
 .tc-scrollbar::-webkit-scrollbar {
