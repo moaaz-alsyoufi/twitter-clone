@@ -1,63 +1,67 @@
 @media only screen and (min-width: 1282px) {
-    :root {
-        --left-sidebar-space: 275px;
-        --right-sidebar-space: 350px;
-    }
+  :root {
+    --left-sidebar-space: 275px;
+    --right-sidebar-space: 350px;
+  }
 
-    .tc-wrap {
-        max-width: 1282px;
-    }
+  .tc-wrap {
+    max-width: 1282px;
+  }
 
-    .tc-wrap .tc-right-sidebar {
-        padding: var(--md-space) var(--xl-space);
-    }
+  .tc-wrap .tc-right-sidebar {
+    padding: var(--md-space) var(--xl-space);
+  }
 
-    .tc-right-sidebar-block__title {
-        font-size: 1.2rem;
-        font-weight: 900;
-    }
+  .tc-right-sidebar-block__title {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
 
-    .tc-left-sidebar-main-nav__nav-item__bookmark,
-    .tc-left-sidebar-main-nav__nav-item__list {
-        display: flex;
-    }
+  .tc-left-sidebar-main-nav__nav-item__bookmark,
+  .tc-left-sidebar-main-nav__nav-item__list {
+    display: flex;
+  }
 
-    span.tc-left-sidebar-main-nav__nav-link__text,
-    span.tc-left-sidebar-main-nav__tweet-btn__word {
-        display: flex;
-    }
+  span.tc-left-sidebar-main-nav__nav-link__text,
+  span.tc-left-sidebar-main-nav__tweet-btn__word {
+    display: flex;
+  }
 
-    span.tc-left-sidebar-main-nav__tweet-btn__icon {
-        display: none;
-    }
+  span.tc-left-sidebar-main-nav__tweet-btn__icon {
+    display: none;
+  }
 
-    .tc-left-sidebar-user-area__profile-account,
-    .tc-left-sidebar-user-area__more {
-        display: flex;
-    }
+  .tc-left-sidebar-user-area__profile-account,
+  .tc-left-sidebar-user-area__more {
+    display: flex;
+  }
 
-    .tc-left-sidebar-user-area__more {
-        margin-left: var(--xl-space);
-    }
+  .tc-left-sidebar-user-area__more {
+    margin-left: var(--xl-space);
+  }
 }
 
 @media only screen and (max-width: 1112px) {
-    :root {
-        --right-sidebar-space: 332px;
-    }
+  :root {
+    --right-sidebar-space: 332px;
+  }
 }
 
 @media only screen and (max-width: 1094px) {
 
-    .tc-wrap {
-        max-width: 1094px;
-    }
+  .tc-wrap {
+    max-width: 1094px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
 
-    .tc-right-sidebar,
-    .tc-left-sidebar {
-        display: none;
-    }
+  .tc-right-sidebar,
+  .tc-left-sidebar {
+    display: none;
+  }
+
+  .tc-content__main-header__main {
+    width: 100%;
+  }
 }
