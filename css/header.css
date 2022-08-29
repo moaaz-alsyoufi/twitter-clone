@@ -7,9 +7,6 @@
 .tc-content__main-header__main {
   position: fixed;
   top: 0;
-  width: calc(100% - (var(--left-sidebar-space) + var(--right-sidebar-space)));
-  left: 0;
-  right: var(--right-sidebar-space);
   z-index: 10;
   background-color: gray;
   display: flex;
