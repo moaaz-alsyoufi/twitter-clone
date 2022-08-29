@@ -1,4 +1,3 @@
-
 const leftSidebar = document.querySelector(".tc-left-sidebar")
 const rightSidebar = document.querySelector(".tc-right-sidebar")
 const header = document.querySelector(".tc-content__main-header__main")
@@ -16,8 +15,6 @@ window.addEventListener('resize', () => {
   leftSidebarWidth = leftSidebar.clientWidth
   rightSidebarLeft = rightSidebar.offsetLeft
   rightSidebarWidth = rightSidebar.clientWidth
-
-  console.log(rightSidebar.offsetLeft);
 
   header.style.left = leftSidebarX + leftSidebarWidth
   header.style.right = window.innerWidth - rightSidebarLeft
