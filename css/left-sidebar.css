@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: var(--md-space) var(--xl-space);
+  padding: var(--sm-space) var(--xl-space);
 }
 
 .tc-left-sidebar-main-nav__logo-container {
@@ -55,9 +55,6 @@
 
 span.tc-left-sidebar-main-nav__nav-link__text {
   margin-left: var(--md-space);
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 400;
   display: none;
 }
 

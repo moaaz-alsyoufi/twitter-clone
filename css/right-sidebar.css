@@ -1,7 +1,7 @@
 .tc-wrap .tc-right-sidebar {
   width: var(--right-sidebar-space);
   overflow: auto;
-  padding: var(--md-space) var(--md-space);
+  padding: var(--sm-space) var(--md-space);
 }
 
 .tc-right-sidebar-inner {

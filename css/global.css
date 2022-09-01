@@ -2,7 +2,7 @@
   --left-sidebar-space: 72px;
   --right-sidebar-space: 350px;
   --content-space: 598px;
-  --main-header-height: 2em;
+  --main-header-height: 42px;
   --border-color: #f1f1f1;
   --primary-color: rgba(29, 161, 242, 1);
   --primary-hover-color: rgb(26, 138, 213);
@@ -172,4 +172,16 @@ button.btn-lg {
 
 .mt.m-xs {
   margin-top: var(--xs-space);
+}
+
+.tc-title-bold {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.tc-title {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 400;
 }

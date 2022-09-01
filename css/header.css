@@ -8,16 +8,36 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--sm-space) 0;
+  margin: 0 var(--md-space);
   color: var(--main-color);
+  height: var(--main-header-height);
+  background-color: var(--white-color);
 }
 
-.tc-content__main-header__icon:hover {
+.tc-content__main-header__main__btn {
+  background-color: var(--white-color);
+  height: 38px;
+  width: 38px;
+}
+
+.tc-content__main-header__main__btn:hover {
+  background: var(--border-color);
+  border-radius: 999px;
+  transition: background 0.2s ease-in;
+  transform: scale(1);
+}
+
+.tc-content__main-header__main__btn-icon {
+  height: 24px;
+  width: 24px;
+}
+
+/* .tc-content__main-header__icon:hover {
   background: var(--border-color);
   border-radius: 40px;
   transition: background 0.2s ease-in;
-}
+} */
