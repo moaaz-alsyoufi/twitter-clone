@@ -1,7 +1,5 @@
 .tc-content__main-header {
-  height: 100px;
   width: 100%;
-  border-bottom: 1px solid var(--border-color);
 }
 
 .tc-content__main-header__main {
@@ -11,8 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--sm-space) 0;
-  margin: 0 var(--md-space);
+  padding: var(--sm-space) var(--md-space);
   color: var(--main-color);
   height: var(--main-header-height);
   background-color: var(--white-color);
@@ -35,9 +32,3 @@
   height: 24px;
   width: 24px;
 }
-
-/* .tc-content__main-header__icon:hover {
-  background: var(--border-color);
-  border-radius: 40px;
-  transition: background 0.2s ease-in;
-} */
