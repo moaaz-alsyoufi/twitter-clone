@@ -29,16 +29,8 @@
 }
 
 .tc-right-sidebar-search__text-input {
-  border: none;
   background-color: var(--extra-light);
-  text-transform: capitalize;
-  position: absolute;
-  height: 100%;
-  max-width: 100%;
-  width: 100%;
-  border-radius: inherit;
-  padding-left: var(--x3-space);
-  z-index: 1;
+
 }
 
 .tc-right-sidebar-search__text-input::placeholder {
@@ -126,13 +118,6 @@
   display: flex;
   justify-content: start;
   align-items: start;
-}
-
-.tc-right-sidebar-block__list__profile-img {
-  background-color: var(--extra-light);
-  border-radius: 999px;
-  width: 50px;
-  height: 50px;
 }
 
 .tc-right-sidebar-block__list__profile-name {
