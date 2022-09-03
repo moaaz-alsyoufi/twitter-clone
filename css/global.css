@@ -152,9 +152,25 @@ button.secondary:hover {
   background-color: var(--main-hover-color);
 }
 
+button.btn-ghost {
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+button.btn-ghost:hover {
+  background-color: var(--primary-hover-logo);
+}
+
 button.btn-block {
   width: 100%;
   padding: calc(var(--md-space) - 3px) 0;
+}
+
+button.btn-xs {
+  font-size: 0.8rem;
+  padding: 6px var(--md-space);
+  line-height: 1;
+  height: auto;
 }
 
 button.btn-lg {
@@ -184,4 +200,27 @@ button.btn-lg {
   text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.tc-profile-img {
+  background-color: var(--extra-light);
+  border-radius: 999px;
+  width: 50px;
+  height: 50px;
+}
+
+.tc-text-input {
+  border: none;
+  text-transform: capitalize;
+  position: absolute;
+  border-radius: inherit;
+  padding-left: var(--x3-space);
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+input:focus {
+  outline: none;
 }
