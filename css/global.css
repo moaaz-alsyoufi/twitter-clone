@@ -51,10 +51,6 @@ body {
   max-height: 100vh;
 }
 
-/* .tc-content-wrap {
-  width: var(--content-space);
-} */
-
 /* Start Scroll bar */
 .tc-scrollbar::-webkit-scrollbar {
   width: 5px;
@@ -175,6 +171,15 @@ button.btn-xs {
 
 button.btn-lg {
   padding: var(--md-space) var(--lg-space);
+}
+
+.btn-display {
+  cursor: default;
+  background-color: rgba(29, 161, 242, 0.5);
+}
+
+.btn-display:hover {
+  transform: none;
 }
 
 /* spaces margin */

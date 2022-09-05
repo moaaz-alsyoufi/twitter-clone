@@ -1,7 +1,6 @@
 .tc-wrap .tc-left-sidebar {
   width: var(--left-sidebar-space);
   height: 100vh;
-  border-right: 1px solid var(--border-color);
 }
 
 .tc-left-sidebar-inner {
