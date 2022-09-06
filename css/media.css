@@ -35,6 +35,10 @@
     width: 100%;
   }
 
+  .tc-left-sidebar-user-area {
+    padding: var(--sm-space) var(--md-space);
+  }
+
   .tc-left-sidebar-user-area__profile-account,
   .tc-left-sidebar-user-area__more {
     display: flex;
