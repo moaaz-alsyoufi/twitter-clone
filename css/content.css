@@ -11,6 +11,11 @@
   border-right: 1px solid var(--border-color);
 }
 
+.tc-content__inner {
+  padding-bottom: 120px;
+}
+
+/* write tweet area */
 .tc-content__inner__write-tweet {
   width: 100%;
   display: flex;
@@ -46,8 +51,8 @@
   color: var(--primary-color);
 }
 
-.tc-content__inner__write-tweet__content-types img:not(.tc-location-icon) {
-  padding-right: calc(var(--md-space) - 2px);
+.tc-content__inner__write-tweet__content-types {
+  margin-left: -10px;
 }
 
 .tc-content__inner__write-tweet__content-types__icons {
@@ -68,8 +73,12 @@
   font-size: 1.2rem;
 }
 
-.btn-ghost {
+.btn-privacy {
   margin-left: -16px;
+}
+
+.btn-privacy:hover {
+  color: var(--primary-color);
 }
 
 .tc-content__inner__write-tweet__content__tweet-btn {
@@ -78,4 +87,120 @@
 
 .img-global {
   margin-right: var(--xs-space);
+}
+
+/* End Write Tweet Area */
+
+/* Start Tweets Area */
+.tc-content__inner__tweets-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tc-content__inner__tweets-area__tweet {
+  padding: var(--sm-space) var(--md-space);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tc-content__inner__tweets-area__tweet:hover {
+  background-color: var(--extra-extra-light);
+  cursor: pointer;
+}
+
+.tc-content__inner__tweets-area__tweet__user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tc-content__inner__tweets-area__tweet__user-info__user {
+  margin: var(--sm-space) 0 0 var(--lg-space);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.tc-content__inner__tweets-area__tweet__user-info__user-name {
+  font-weight: bold;
+}
+
+.tc-content__inner__tweets-area__tweet__user-info__user-name:hover {
+  text-decoration: underline;
+}
+
+
+.tc-content__inner__tweets-area__tweet__user-info__user-twitter-name {
+  font-weight: 400;
+  color: var(--light-gray);
+}
+
+.tweet-time:hover {
+  text-decoration: underline;
+}
+
+.tc-content__inner__tweets-area__tweet__user-info__more {
+  padding-right: var(--sm-space);
+}
+
+.tc-content__inner__tweets-area__tweet-text {
+  padding: var(--sm-space);
+  font-size: 0.9rem;
+}
+
+.tc-content__inner__tweets-area__tweet__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tc-content__inner__tweets-area__tweet__option {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.btn-option {
+  height: 28px;
+  width: 28px;
+  padding: var(--xs-space);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__comment:hover svg>path {
+  fill: var(--primary-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__comment:hover span {
+  color: var(--primary-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__retweet:hover svg>path {
+  stroke: var(--retweet-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__retweet:hover span {
+  color: var(--retweet-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__retweet:hover button {
+  background-color: var(--retweet-hover-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__like:hover svg>path {
+  stroke: var(--like-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__like:hover span {
+  color: var(--like-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__like:hover button {
+  background-color: var(--like-hover-color);
+}
+
+.tc-content__inner__tweets-area__tweet__option.tc-option__share:hover svg>path {
+  stroke: var(--primary-color);
 }
