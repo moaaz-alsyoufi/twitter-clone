@@ -1,5 +1,5 @@
 :root {
-  --left-sidebar-space: 72px;
+  --left-sidebar-space: 80px;
   --right-sidebar-space: 350px;
   --content-space: 598px;
   --main-header-height: 42px;
@@ -9,6 +9,10 @@
   --secondary-color: rgb(89, 0, 242);
   --secondary-hover-color: rgb(56, 7, 142);
   --primary-hover-logo: rgba(29, 155, 240, 0.2);
+  --retweet-color: rgb(55, 200, 151);
+  --retweet-hover-color: rgb(222, 241, 235);
+  --like-color: rgb(249, 89, 163);
+  --like-hover-color: rgb(247, 224, 235);
   --white-color: #fff;
   --main-color: #14171a;
   --main-hover-color: #222527;
@@ -120,14 +124,14 @@ button {
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 0.5px;
-  height: var(--xl-space);
+  max-height: var(--xl-space);
 }
 
-button.secondary {
+.secondary {
   background-color: var(--main-color);
 }
 
-button.secondary:hover {
+.secondary:hover {
   background-color: black;
 }
 
@@ -136,40 +140,40 @@ button:hover {
   transform: scale(1.05);
 }
 
-button.primary:hover {
+.btn-primary:hover {
   background-color: var(--primary-hover-color);
 }
 
-button.secondary {
+.secondary {
   background-color: var(--main-color);
 }
 
-button.secondary:hover {
+.secondary:hover {
   background-color: var(--main-hover-color);
 }
 
-button.btn-ghost {
+.btn-ghost {
   color: var(--primary-color);
   background-color: transparent;
 }
 
-button.btn-ghost:hover {
+.btn-ghost:hover {
   background-color: var(--primary-hover-logo);
 }
 
-button.btn-block {
+.btn-block {
   width: 100%;
   padding: calc(var(--md-space) - 3px) 0;
 }
 
-button.btn-xs {
+.btn-xs {
   font-size: 0.8rem;
   padding: 6px var(--md-space);
   line-height: 1;
   height: auto;
 }
 
-button.btn-lg {
+.btn-lg {
   padding: var(--md-space) var(--lg-space);
 }
 
@@ -180,6 +184,15 @@ button.btn-lg {
 
 .btn-display:hover {
   transform: none;
+}
+
+.btn-circle {
+  border-radius: 999px;
+}
+
+.btn-circle.btn-xs {
+  width: var(--xl-space);
+  height: var(--xl-space);
 }
 
 /* spaces margin */
@@ -195,6 +208,7 @@ button.btn-lg {
   margin-top: var(--xs-space);
 }
 
+/* Titles */
 .tc-title-bold {
   text-transform: capitalize;
   font-size: 1.2rem;
@@ -207,13 +221,18 @@ button.btn-lg {
   font-weight: 400;
 }
 
+/* profile img */
 .tc-profile-img {
-  background-color: var(--extra-light);
+  background-image: url("../imgs/profile-me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 999px;
   width: 50px;
   height: 50px;
 }
 
+/* Text input */
 .tc-text-input {
   border: none;
   text-transform: capitalize;
