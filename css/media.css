@@ -31,6 +31,10 @@
     display: none;
   }
 
+  .tc-left-sidebar-main-nav__tweet-btn {
+    width: 100%;
+  }
+
   .tc-left-sidebar-user-area__profile-account,
   .tc-left-sidebar-user-area__more {
     display: flex;

@@ -70,6 +70,7 @@ span.tc-left-sidebar-main-nav__nav-link__text {
 .tc-left-sidebar-main-nav__tweet-btn {
   height: 46px;
   width: 46px;
+  --xl-space: 46px;
 }
 
 .tc-left-sidebar-main-nav__nav-item__bookmark,
