@@ -87,7 +87,14 @@ span.tc-left-sidebar-main-nav__nav-link__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: calc(var(--md-space) - 2px);
   margin-bottom: var(--xl-space);
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.tc-left-sidebar-user-area:hover {
+  background-color: var(--extra-light);
 }
 
 .tc-left-sidebar-user-area__profile {
@@ -99,6 +106,10 @@ span.tc-left-sidebar-main-nav__nav-link__text {
   height: var(--xxl-space);
   border-radius: 999px;
   background-color: var(--extra-light);
+  background-image: url("../imgs/profile-me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
